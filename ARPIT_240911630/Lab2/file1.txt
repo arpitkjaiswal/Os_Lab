@@ -1,0 +1,26 @@
+car
+to
+ferrari 
+choclate
+mango
+apple 
+Ice Ceam
+food
+one peice
+JJk
+Hi
+Hello
+WORLD
+Apple
+This is a test.
+Another line.
+12345
+There are 5 spaces here
+A line with 789 in it
+Two.
+AB
+C.
+12345
+No digits here
+Line with a number: 42
+Another number example is 856.

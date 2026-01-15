@@ -1,0 +1,3 @@
+4ITA2@debian:~$ mkdir ARPIT_240911630
+4ITA2@debian:~$ cd ARPIT_240911630
+4ITA2@debian:~/ARPIT_240911630$ mkdir Lab1 Lab2 Lab3 Lab4 Lab5 Lab6 Lab7 Lab8 Lab9 Lab10 Lab11

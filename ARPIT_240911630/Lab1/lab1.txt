@@ -1,0 +1,119 @@
+//Question1  
+4ITA2@debian:~$ mkdir ARPIT_240911630
+4ITA2@debian:~$ cd ARPIT_240911630
+4ITA2@debian:~/ARPIT_240911630$ mkdir Lab1 Lab2 Lab3 Lab4 Lab5 Lab6 Lab7 Lab8 Lab9 Lab10 Lab11
+
+
+
+//Question2
+4ITA2@debian:~/ARPIT_240911630$ cd Lab1
+4ITA2@debian:~/ARPIT_240911630/Lab1$ touch file1.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ pwd
+/home/4ITA2/ARPIT_240911630/Lab1
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls
+ file1.txt   lab1.txt  'Screenshot from 2026-01-08 14-53-01.png'
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls ^C
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls /home/4ITA2/ARPIT_240911630/Lab1
+ file1.txt   lab1.txt  'Screenshot from 2026-01-08 14-53-01.png'
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls /home/4ITA2/ARPIT_240911630/Lab1 >> file1.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cat file1.txt
+file1.txt
+lab1.txt
+Screenshot from 2026-01-08 14-53-01.png
+4ITA2@debian:~/ARPIT_240911630/Lab1$ echo 
+4ITA2@debian:~/ARPIT_240911630/Lab1$ echo "Question 2 Solution"
+Question 2 Solution
+
+//Question3
+4ITA2@debian:~/ARPIT_240911630$ cd Lab1
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cat > question3.txt
+hello
+HI
+Brown 
+Candy
+Choclate
+Cake
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cat >>> file3.txt
+bash: syntax error near unexpected token `>'
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cat >> file3.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ head question3.txt -n 3
+hello
+HI
+Brown 
+4ITA2@debian:~/ARPIT_240911630/Lab1$ head question3.txt -c -5
+hello
+HI
+Brown 
+Candy
+Choclate
+4ITA2@debian:~/ARPIT_240911630/Lab1$ tail question3.txt -n 3
+Candy
+Choclate
+Cake
+4ITA2@debian:~/ARPIT_240911630/Lab1$ tail question3.txt -c 2
+e
+4ITA2@debian:~/ARPIT_240911630/Lab1$ touch ex.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cp -i question3.txt ex.txt
+cp: overwrite 'ex.txt'? y
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cp -n  question3.txt ex.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cp -f  question3.txt ex.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ date
+Thursday 08 January 2026 03:28:53 PM IST
+4ITA2@debian:~/ARPIT_240911630/Lab1$ mkdir lab1ex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ mv -f ex.txt lab1ex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ mkdir newex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ mv -i newex lab1ex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ rm -r ex.txt
+rm: cannot remove 'ex.txt': No such file or directory
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cd lab1ex
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rm -r ex.txt
+ash: remdir: command not found
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir newfile
+rmdir: failed to remove 'newfile': No such file or directory
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir question3.txt
+rmdir: failed to remove 'question3.txt': No such file or directory
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rm,dir lab1ex
+bash: rm,dir: command not found
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir lab1ex
+rmdir: failed to remove 'lab1ex': No such file or directory
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ cat > l1.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir l1.txt
+rmdir: failed to remove 'l1.txt': Not a directory
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir newex
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ find . -name question3.txt
+
+
+
+
+
+
+
+
+
+
+
+
+//question4
+4ITA2@debian:~/ARPIT_240911630/Lab1$ date
+Thursday 08 January 2026 03:46:11 PM IST
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls *.txt
+file1.txt  lab1.txt       text1.txt  text3.txt  text5.txt  text7.txt
+file3.txt  question3.txt  text2.txt  text4.txt  text6.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls *[0-9]*
+file1.txt  lab1.txt       Question2.png  text1.txt  text3.txt  text5.txt  text7.txt
+file3.txt  Question1.png  question3.txt  text2.txt  text4.txt  text6.txt
+
+lab1ex:
+newex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls *????*
+file1.txt  lab1.txt       Question2.png  text1.txt  text3.txt  text5.txt  text7.txt
+file3.txt  Question1.png  question3.txt  text2.txt  text4.txt  text6.txt
+
+lab1ex:
+newex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls [!aeiouAEIOU]*
+file1.txt  lab1.txt       Question2.png  text1.txt  text3.txt  text5.txt  text7.txt
+file3.txt  Question1.png  question3.txt  text2.txt  text4.txt  text6.txt
+
+lab1ex:
+newex

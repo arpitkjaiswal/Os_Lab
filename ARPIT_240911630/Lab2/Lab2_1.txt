@@ -1,0 +1,13 @@
+ITA2@debian:~/ARPIT_240911630/Lab2$ date
+Thursday 15 January 2026 03:34:44 PM IST
+4ITA2@debian:~/ARPIT_240911630/Lab2$ echo "Arpit Kumar Jaiswal"
+Arpit Kumar Jaiswal
+4ITA2@debian:~/ARPIT_240911630/Lab2$ vi newfile.txt
+4ITA2@debian:~/ARPIT_240911630/Lab2$ vi +3 newfile.txt
+4ITA2@debian:~/ARPIT_240911630/Lab2$ vi +R newfile.txt
+4ITA2@debian:~/ARPIT_240911630/Lab2$ :w
+bash: :w: command not found
+4ITA2@debian:~/ARPIT_240911630/Lab2$ w
+ 15:39:12 up  1:42,  1 user,  load average: 0.04, 0.12, 0.19
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+4ITA2    :1       :1               13:56   ?xdm?   8:24    ?    /usr/libexec/gd

@@ -1,0 +1,56 @@
+4ITA2@debian:~/ARPIT_240911630$ cd Lab1
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cat > question3.txt
+hello
+HI
+Brown 
+Candy
+Choclate
+Cake
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cat >>> file3.txt
+bash: syntax error near unexpected token `>'
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cat >> file3.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ head question3.txt -n 3
+hello
+HI
+Brown 
+4ITA2@debian:~/ARPIT_240911630/Lab1$ head question3.txt -c -5
+hello
+HI
+Brown 
+Candy
+Choclate
+4ITA2@debian:~/ARPIT_240911630/Lab1$ tail question3.txt -n 3
+Candy
+Choclate
+Cake
+4ITA2@debian:~/ARPIT_240911630/Lab1$ tail question3.txt -c 2
+e
+4ITA2@debian:~/ARPIT_240911630/Lab1$ touch ex.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cp -i question3.txt ex.txt
+cp: overwrite 'ex.txt'? y
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cp -n  question3.txt ex.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cp -f  question3.txt ex.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ date
+Thursday 08 January 2026 03:28:53 PM IST
+4ITA2@debian:~/ARPIT_240911630/Lab1$ mkdir lab1ex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ mv -f ex.txt lab1ex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ mkdir newex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ mv -i newex lab1ex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ rm -r ex.txt
+rm: cannot remove 'ex.txt': No such file or directory
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cd lab1ex
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rm -r ex.txt
+ash: remdir: command not found
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir newfile
+rmdir: failed to remove 'newfile': No such file or directory
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir question3.txt
+rmdir: failed to remove 'question3.txt': No such file or directory
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rm,dir lab1ex
+bash: rm,dir: command not found
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir lab1ex
+rmdir: failed to remove 'lab1ex': No such file or directory
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ cat > l1.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir l1.txt
+rmdir: failed to remove 'l1.txt': Not a directory
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ rmdir newex
+4ITA2@debian:~/ARPIT_240911630/Lab1/lab1ex$ find . -name question3.txt

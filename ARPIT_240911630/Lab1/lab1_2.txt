@@ -1,0 +1,17 @@
+4ITA2@debian:~/ARPIT_240911630$ cd Lab1
+4ITA2@debian:~/ARPIT_240911630/Lab1$ touch file1.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ pwd
+/home/4ITA2/ARPIT_240911630/Lab1
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls
+ file1.txt   lab1.txt  'Screenshot from 2026-01-08 14-53-01.png'
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls ^C
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls /home/4ITA2/ARPIT_240911630/Lab1
+ file1.txt   lab1.txt  'Screenshot from 2026-01-08 14-53-01.png'
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls /home/4ITA2/ARPIT_240911630/Lab1 >> file1.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ cat file1.txt
+file1.txt
+lab1.txt
+Screenshot from 2026-01-08 14-53-01.png
+4ITA2@debian:~/ARPIT_240911630/Lab1$ echo 
+4ITA2@debian:~/ARPIT_240911630/Lab1$ echo "Question 2 Solution"
+Question 2 Solution

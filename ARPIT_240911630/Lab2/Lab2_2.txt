@@ -1,0 +1,48 @@
+4ITA2@debian:~/ARPIT_240911630/Lab2$ date
+Thursday 15 January 2026 03:07:25 PM IST
+4ITA2@debian:~/ARPIT_240911630/Lab2$ echo "Arpit Kumar Jaiswal"
+Arpit Kumar Jaiswal
+4ITA2@debian:~/ARPIT_240911630/Lab2$ grep -x '..' file1.txt
+to
+Hi
+AB
+C.
+4ITA2@debian:~/ARPIT_240911630/Lab2$ grep '^[A-Z]' file1.txt
+Ice Ceam
+JJk
+Hi
+Hello
+WORLD
+Apple
+This is a test.
+Another line.
+There are 5 spaces here
+A line with 789 in it
+Two.
+AB
+C.
+4ITA2@debian:~/ARPIT_240911630/Lab2$ grep '\.$' file1.txt
+This is a test.
+Another line.
+Two.
+C.
+4ITA2@debian:~/ARPIT_240911630/Lab2$ grep -x ' ' file1.txt
+4ITA2@debian:~/ARPIT_240911630/Lab2$ grep ' ' file1.txt
+ferrari 
+apple 
+Ice Ceam
+one peice
+This is a test.
+Another line.
+There are 5 spaces here
+A line with 789 in it
+4ITA2@debian:~/ARPIT_240911630/Lab2$ grep '[0-9]' file1.txt > file2.txt
+4ITA2@debian:~/ARPIT_240911630/Lab2$ ^C
+4ITA2@debian:~/ARPIT_240911630/Lab2$ grep '[0-9]' file1.txt > file2.txt
+4ITA2@debian:~/ARPIT_240911630/Lab2$ cat file2.txt
+12345
+There are 5 spaces here
+A line with 789 in it
+4ITA2@debian:~/ARPIT_240911630/Lab2$ grep '[0-9]' file1.txt > file2.txt
+
+

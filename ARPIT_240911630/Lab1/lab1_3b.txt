@@ -1,0 +1,23 @@
+4ITA2@debian:~/ARPIT_240911630/Lab1$ date
+Thursday 08 January 2026 03:46:11 PM IST
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls *.txt
+file1.txt  lab1.txt       text1.txt  text3.txt  text5.txt  text7.txt
+file3.txt  question3.txt  text2.txt  text4.txt  text6.txt
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls *[0-9]*
+file1.txt  lab1.txt       Question2.png  text1.txt  text3.txt  text5.txt  text7.txt
+file3.txt  Question1.png  question3.txt  text2.txt  text4.txt  text6.txt
+
+lab1ex:
+newex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls *????*
+file1.txt  lab1.txt       Question2.png  text1.txt  text3.txt  text5.txt  text7.txt
+file3.txt  Question1.png  question3.txt  text2.txt  text4.txt  text6.txt
+
+lab1ex:
+newex
+4ITA2@debian:~/ARPIT_240911630/Lab1$ ls [!aeiouAEIOU]*
+file1.txt  lab1.txt       Question2.png  text1.txt  text3.txt  text5.txt  text7.txt
+file3.txt  Question1.png  question3.txt  text2.txt  text4.txt  text6.txt
+
+lab1ex:
+newex

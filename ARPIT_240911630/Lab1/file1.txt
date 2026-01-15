@@ -1,0 +1,3 @@
+file1.txt
+lab1.txt
+Screenshot from 2026-01-08 14-53-01.png
